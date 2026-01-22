@@ -5,6 +5,7 @@ namespace db;
 entity Libros : cuid, managed {
     titulo: String;
     autor: Association to Autores;
+    paginas: Integer;
     capitulos: Composition of many Capitulos on capitulos.libro = $self;
 }
 
@@ -14,6 +15,8 @@ entity Autores : cuid, managed {
 }
 
 entity Capitulos : cuid, managed {
-    numero: Integer;
     key libro: Association to Libros;
+    numero: Integer;
+    titulo: String;
+    paginas: Integer;
 }

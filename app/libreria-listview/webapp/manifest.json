@@ -131,7 +131,8 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Libro"
+              "contextPath": "/Libro",
+              "sectionLayout": "Page"
             }
           }
         }
